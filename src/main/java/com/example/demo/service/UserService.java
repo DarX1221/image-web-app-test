@@ -60,7 +60,7 @@ public class UserService {
 
     public AppUser registerUserTemplateToAppUser(RegisterUserTemplate templateUser) {
         return new AppUser(templateUser.getUsername(),
-                templateUser.getEmail(), templateUser.getPassword(), "ROLE_ADMINq");
+                templateUser.getEmail(), templateUser.getPassword(), "ROLE_USER");
     }
 
 }

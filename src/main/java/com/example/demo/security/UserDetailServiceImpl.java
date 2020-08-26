@@ -17,10 +17,6 @@ public class UserDetailServiceImpl implements UserDetailsService {
     @Autowired
     public UserDetailServiceImpl(UserService userService) {
         this.userService = userService;
-
-        // admin account for test's, only in local(github) version
-        AppUser admin = new AppUser("admin", "admin@mail.com", new BCryptPasswordEncoder().encode("password"), "ROLE_ADMIN");
-        userService.saveUser(admin);
     }
 
     @Override

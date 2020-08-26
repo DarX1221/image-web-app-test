@@ -30,9 +30,9 @@ public class ImageUploaderService {
         this.userService = userService;
         // configuration (Map) for image cloud (cloudinary)
         Map config = new HashMap();
-        config.put("cloud_name", "dhm3ydouf");
-        config.put("api_key", "738384397126113");
-        config.put("api_secret", "R5eHqWGKwBxa61HC0TuKqatm3DQ");
+        config.put("cloud_name", "ddvdrfgsm");
+        config.put("api_key", "361272953992825");
+        config.put("api_secret", "ckLkUxGEsOOJQeOy4g1n4ZJHX1U");
         this.cloudinary = new Cloudinary(config);
     }
 
